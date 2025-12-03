@@ -43,3 +43,56 @@ button {
 button:hover {
     background: #45a049;
 }
+
+/* PUP Custom Alert Modal */
+.pup-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pup-alert-box {
+    background: #800000; /* PUP Maroon */
+    padding: 25px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #ffffff; /* CHANGED TO WHITE */
+    font-family: Arial, sans-serif;
+}
+
+.pup-alert-box h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pup-alert-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.pup-alert-btn {
+    background: #ffffff; /* CHANGED TO WHITE */
+    color: #800000;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.pup-alert-btn:hover {
+    background: #e6e6e6; /* Light gray so hover is visible */
+}
+
