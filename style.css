@@ -44,7 +44,7 @@ button:hover {
     background: #45a049;
 }
 
-/* PUP Custom Alert Modal */
+/* PUP Alert */
 .pup-alert-overlay {
     position: fixed;
     top: 0;
@@ -55,18 +55,19 @@ button:hover {
     backdrop-filter: blur(2px);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 50px;
     z-index: 9999;
 }
 
 .pup-alert-box {
-    background: #800000; /* PUP Maroon */
+    background: #800000;
     padding: 25px;
     width: 320px;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     text-align: center;
-    color: #ffffff; /* CHANGED TO WHITE */
+    color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
@@ -82,7 +83,7 @@ button:hover {
 }
 
 .pup-alert-btn {
-    background: #ffffff; /* CHANGED TO WHITE */
+    background: #ffffff;
     color: #800000;
     padding: 10px 25px;
     border: none;
@@ -93,6 +94,6 @@ button:hover {
 }
 
 .pup-alert-btn:hover {
-    background: #e6e6e6; /* Light gray so hover is visible */
+    background: #e6e6e6;
 }
 

@@ -1,5 +1,4 @@
-// Custom PUP Alert
-function pupAlert(title, message) {
+function pupAlert(title, message, callback = null) {
     const overlay = document.createElement("div");
     overlay.className = "pup-alert-overlay";
 
@@ -15,6 +14,9 @@ function pupAlert(title, message) {
 
     overlay.querySelector("button").addEventListener("click", () => {
         overlay.remove();
+        if (typeof callback === "function") {
+            callback();
+        }
     });
 }
 
@@ -29,7 +31,7 @@ document.getElementById("loginBtn").addEventListener("click", () => {
 
     if (username == "omlingo" && password == "pupt") {
     pupAlert("Login Successful", "Welcome, " + username + "!", () => {
-        window.location.href = "dashboard.html";   // Redirect AFTER alert closes
+        window.location.href = "dashboard.html";
     });
 }
 
