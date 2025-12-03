@@ -7,5 +7,12 @@ document.getElementById("loginBtn").addEventListener("click", () => {
         return;
     }
 
-    alert("Logging in as: " + username);
+    if (username == "omlingo" && password == "pupt") {
+        alert("Login successful! Welcome, " + username);
+        window.location.href = "dashboard.html";
+    } 
+    
+    else {
+        alert("Invalid username or password.");
+    }
 });
