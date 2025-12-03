@@ -4,9 +4,8 @@ body {
     background: #f2f2f2;
 }
 
-/* Navigation bar */
 .navbar {
-    background: #4CAF50;
+    background: #800000;
     padding: 15px;
     display: flex;
     gap: 20px;
@@ -22,12 +21,11 @@ body {
     text-decoration: underline;
 }
 
-/* Top Frame: Logo and Title */
 .top-frame {
     background: white;
     padding: 40px 20px;
     text-align: center;
-    border-bottom: 3px solid #4CAF50;
+    border-bottom: 3px solid #800000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,12 +44,11 @@ body {
 }
 
 .logo-container h1 {
-    color: #4CAF50;
+    color: #800000;
     margin: 0;
     font-size: 28px;
 }
 
-/* Bottom Frame: Hyperlinks with Images */
 .bottom-frame {
     background: #f9f9f9;
     padding: 40px 20px;
@@ -81,7 +78,7 @@ body {
 
 .link-item:hover {
     transform: scale(1.1);
-    color: #4CAF50;
+    color: #800000;
 }
 
 .link-item img {
