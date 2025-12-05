@@ -31,7 +31,7 @@ document.getElementById("loginBtn").addEventListener("click", () => {
 
     if (username == "omlingo" && password == "pupt") {
     pupAlert("Login Successful", "Welcome, " + username + "!", () => {
-        window.location.href = "dashboard.html";
+        window.location.href = "home.html";
     });
 }
 
