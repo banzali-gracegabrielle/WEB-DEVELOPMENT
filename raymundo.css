@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+.main-nav {
+    width: 100%;
+    background-color: rgba(128, 0, 0, 0.92);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.nav-right a {
+  margin-left: 25px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.nav-right a:hover {
+  color: #ffdf00;
+}
+
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+.nav-right a.active {
+  color: #ffdf00;
+}
+
+.nav-right a.active::after {
+  width: 100%;
+  background: #ffdf00;
+}
+
+.nav-right a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: #ffdf00;
+  transition: 0.3s ease;
+}
+
+#profile {
+  padding-top: 120px;
+}
+
+section {
+  padding-top: 4vh;
+  height: auto;
+  margin: 0 10rem;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem; 
+    margin-top: 1rem;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: black;
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: white 0.1rem solid;
+}
+
+#about {
+  position: relative;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-details-container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  flex: 1;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: rgb(85, 85, 85);
+}
+
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+
+article .icon {
+  cursor: default;
+}
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  background: rgb(250, 250, 250);
+  border-color: rgb(163, 163, 163);
+}
+
+.project-img {
+  width: 90%;
+  height: 90%;
+  border-radius: 2rem;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+#contact {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  background: rgb(250, 250, 250);
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  padding: 0.5rem;
+  margin: 2rem auto;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
