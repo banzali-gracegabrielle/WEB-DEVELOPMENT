@@ -1,10 +1,121 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Gabrielle</title>
+    <title>Banzali's Profile</title>
+    <link rel="stylesheet" href="banzali.css">
 </head>
 <body>
-    <h1>
-        Welcome to Grace Gabrielle P. Banzali's Page
-    </h1>
+
+    <!-- nav bar -->
+    <nav class="main-nav">
+        <div class="nav-left">
+            <img src="resources/logo-quatroave.png" alt="Logo" class="logo-img">
+        </div>
+
+        <div class="nav-right">
+            <a href="home.html">Home</a>
+            <a href="anipan.html">Anipan</a>
+            <a href="banzali.html" class="active">Banzali</a>
+            <a href="ocariza.html">Ocariza</a>
+            <a href="raymundo.html">Raymundo</a>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-photo">
+                <img src="resources/banzali.png" alt="Banzali Photo" class="profile-photo">
+            </div>
+            <div class="hero-info">
+                <h1>Hi, I'm Grace Gabrielle Banzali</h1>
+                <p class="lead">Back-end Developer • Database Design • Building scalable and efficient server solutions.</p>
+                <div class="cta-row">
+                    <a class="btn ghost" href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- profile -->
+    <main class="container">
+        <div class="info-cards-wrapper">
+            <div class="info-card">
+                <h3>About Me</h3>
+                <p>
+                    An aspiring Back-End Developer. I am passionate about 
+                    building efficient and scalable back-end systems. I am always 
+                    open to collaborating on creative projects and exploring new technologies.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Technical Skills</h3>
+                <ul class="inline-skills-list">
+                    <li>MySQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>RESTful APIs</li>
+                    <li>Git</li>
+                    <li>Python Programming</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-card full-width">
+            <h3>Education & Achievements</h3>
+            <p>
+                <strong>Bachelor of Science in Information Technology</strong><br>
+                Polytechnic University of the Philippines - Taguig Campus<br>
+                <em>Currently enrolled, 3rd Year</em>
+            </p>
+            <br>
+            <p>
+                <strong>✓ Civil Service Examination (CSE) Passed</strong><br>
+                August 2025
+            </p>
+            <br>
+            <p>
+                <strong>Senior High School - Science Technology Engineering and Mathematics (STEM)</strong><br>
+                Pasay City West High School<br>
+                <em>2021 - 2023 | With High Honors</em>
+            </p>
+            <br>
+            <p>
+                <strong>Junior High School</strong><br>
+                Pasay City West High School<br>
+                <em>2017 - 2021 | With Honors</em>
+            </p>
+        </div>
+    </main>
+
+    <!-- contact -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="resources/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:gracegabrielle17@gmail.com">gracegabrielle17@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="resources/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/gabrielle-banzali-b6248a389/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &#169; 2025 QuatroAve. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
