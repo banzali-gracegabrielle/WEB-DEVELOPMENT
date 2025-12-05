@@ -3,12 +3,55 @@
 <head>
     <title>Anipan's Profile</title>
     <style>
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #eef2f7;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            background-color: rgba(128, 0, 0, 0.92);
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 20;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFDF00;
+        }
+
+        nav a.active {
+            color: #FFDF00;
+        }
+
+        /* HEADER */
         .header {
             background: linear-gradient(135deg, #a7c4ff 0%, #dfe9ff 100%);
             padding: 60px 20px 80px;
@@ -101,13 +144,26 @@
 </head>
 <body>
 
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <img src="resources/logo-quatroave.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-right">
+            <a href="home.html">Home</a>
+            <a href="anipan.html" class="active">Anipan</a>
+            <a href="banzali.html">Banzali</a>
+            <a href="ocariza.html">Ocariza</a>
+            <a href="raymundo.html">Raymundo</a>
+        </div>
+    </nav>
+
     <div class="header">
         <img src="resources/anipan.png" alt="Student Photo">
         <div class="header-text">
             <h1>Sigmund Kristoffer Anipan</h1>
             <p>College Student, PUP-Taguig Campus</p>
         </div>
-    </div>
     </div>
 
     <div class="container">
